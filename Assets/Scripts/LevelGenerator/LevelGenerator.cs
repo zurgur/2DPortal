@@ -8,9 +8,10 @@ public class LevelGenerator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GeneratLevel();
+        GenerateLevel();
     }
-    void GeneratLevel()
+    
+    void GenerateLevel()
     {
         for (int x = 0; x < map.width; x++)
         {
@@ -20,13 +21,14 @@ public class LevelGenerator : MonoBehaviour {
             }
         }
     }
+
     void GenerateTile(int x, int y)
     {
         Color pixelColor = map.GetPixel(x, y);
         
         if(pixelColor.a == 0)
         {
-            // the pixle is transparent lets ignor it
+            // the pixel is transparent let's ignore it
             return;
         }
         Debug.Log(pixelColor);
