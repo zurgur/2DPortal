@@ -10,13 +10,12 @@ public class PlatformDestroyer : MonoBehaviour {
 	void Start () {
 		destructionPoint = GameObject.Find ("PlatformDestructionPoint");
 		platformWidth = gameObject.GetComponent<BoxCollider2D>().size.x;
-		Debug.Log(destructionPoint);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(transform.position.x + platformWidth / 2 < destructionPoint.transform.position.x) {
-			Destroy(gameObject);
+			gameObject.SetActive(false);
 		}
 		
 	}
