@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GroundGenerator.cs" />
      <Compile Include="Assets\Scripts\Engine\CameraController.cs" />
      <Compile Include="Assets\Scripts\Engine\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Engine\PlatformDestroyer.cs" />
