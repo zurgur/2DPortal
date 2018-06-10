@@ -52,20 +52,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GroundGenerator.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+     <Compile Include="Assets\Scripts\Engine\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Engine\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\Engine\PlatformDestroyer.cs" />
+     <Compile Include="Assets\Scripts\Engine\PlatformGenerator.cs" />
+     <Compile Include="Assets\Scripts\Engine\PlayerController.cs" />
      <Compile Include="Assets\Scripts\LevelGenerator\ColorToPrefs.cs" />
      <Compile Include="Assets\Scripts\LevelGenerator\LevelGenerator.cs" />
      <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\SettingsMenu.cs" />
-     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
-     <Compile Include="Assets\Scripts\PlatformDestroyer.cs" />
-     <Compile Include="Assets\Scripts\PlatformGenerator.cs" />
-     <Compile Include="Assets\Scripts\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\Remover.cs" />
-     <Compile Include="Assets\Scripts\TestController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
