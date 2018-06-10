@@ -182,13 +182,21 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:UNITY_TEAM_LICENSE
+'Assets/GroundGenerator.cs'
+'Assets/Scripts/CameraController.cs'
 'Assets/Scripts/CameraFollow.cs'
 'Assets/Scripts/FollowPlayer.cs'
+'Assets/Scripts/LevelGenerator/ColorToPrefs.cs'
+'Assets/Scripts/LevelGenerator/LevelGenerator.cs'
 'Assets/Scripts/Menus/MainMenu.cs'
 'Assets/Scripts/Menus/PauseMenu.cs'
 'Assets/Scripts/Menus/SettingsMenu.cs'
+'Assets/Scripts/ObjectPooler.cs'
+'Assets/Scripts/PlatformDestroyer.cs'
+'Assets/Scripts/PlatformGenerator.cs'
 'Assets/Scripts/PlayerControl.cs'
 'Assets/Scripts/Remover.cs'
+'Assets/Scripts/TestController.cs'
 'Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs'
 'Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs'
 'Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs'
