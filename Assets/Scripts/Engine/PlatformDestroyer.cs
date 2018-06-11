@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformDestroyer : MonoBehaviour {
-	public GameObject destructionPoint;
+	private GameObject destructionPoint;
 	private float platformWidth;
 
 	// Use this for initialization

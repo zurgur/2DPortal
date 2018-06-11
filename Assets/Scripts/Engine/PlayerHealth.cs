@@ -17,11 +17,13 @@ public class PlayerHealth : MonoBehaviour {
     public void HurtPlayer(int damage)
     {
         health -= damage;
+        healthBar.value = health;
+
         if (health<=0)
         {
             Debug.Log("dead need to implament deth screen");
         }
-        healthBar.value = health;
+        
     }
 	
 }
