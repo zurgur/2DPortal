@@ -18,6 +18,7 @@ public class PlatformGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		platformWidths = new float[objectPools.Length];
+
 		for(int i = 0; i < objectPools.Length; i++) {
 			platformWidths[i] = objectPools[i].pooledObject.GetComponent<BoxCollider2D>().size.x;
 		}
@@ -40,6 +41,11 @@ public class PlatformGenerator : MonoBehaviour {
 			newPlatform.transform.rotation = newPlatform.transform.rotation;
 			newPlatform.SetActive(true);
 
+
+				transform.position = new Vector3(
+					transform.position.x + platformWidths[platformSelector]/2, 
+					transform.position.y,
+					transform.position.z);
 			}
 	}
 }
