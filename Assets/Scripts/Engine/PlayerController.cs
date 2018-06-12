@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	private float moveSpeed = 10;
-	private float jumpForce = 7;
+	private float jumpForce = 5;
 	public bool isMirrored;
 	private float jumpCount = 0;
 
