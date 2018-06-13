@@ -47,4 +47,15 @@ public class PlayerController : MonoBehaviour {
 		myAnimator.SetBool ( "Grounded", grounded); 
 		
 	}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.name == "MonsterBullet(Clone)")
+        {
+            Destroy(other.gameObject);
+            GetComponent<PlayerHealth>().HurtPlayer(5); 
+        }
+
+    }
 }

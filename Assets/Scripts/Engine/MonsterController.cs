@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterController : MonoBehaviour
 {
-    private float health = 100;
+    private float health = 20;
 
     private float moveSpeed = 10;
 
@@ -19,6 +19,7 @@ public class MonsterController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
 
         myRigidBody = GetComponent<Rigidbody2D>();
 
@@ -31,6 +32,10 @@ public class MonsterController : MonoBehaviour
     void Update()
     {
 
+        if (health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
 
         myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
 
@@ -38,5 +43,16 @@ public class MonsterController : MonoBehaviour
 
         myAnimator.SetFloat("Speed", myRigidBody.velocity.x);
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        if (other.gameObject.name == "Bullet(Clone)")
+         {
+             Destroy(other.gameObject);
+             health -= GameObject.Find("Gloob").GetComponent<Shooting>().Damage;
+         }
+         
     }
 }
