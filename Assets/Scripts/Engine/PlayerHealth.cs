@@ -9,10 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField]
     private Slider healthBar;
 
-    void Start()
-    {
-        HurtPlayer(50);
-    }
+    
 
     public void HurtPlayer(int damage)
     {

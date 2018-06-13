@@ -37,6 +37,11 @@ public class LevelGenerator : MonoBehaviour {
             if(colorMaping.color.Equals(pixelColor))
             {
                 Vector2 posision = new Vector2(x, y);
+                if (colorMaping.prefab.transform.childCount > 1)
+                {
+                    Debug.Log("has chidern");
+                    
+                }
                 Instantiate(colorMaping.prefab, posision, Quaternion.identity, transform);
             }
         }
