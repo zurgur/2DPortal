@@ -1136,6 +1136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 394566477}
   - component: {fileID: 394566478}
+  - component: {fileID: 394566479}
   m_Layer: 0
   m_Name: LevelSelect
   m_TagString: Untagged
@@ -1169,6 +1170,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394566476}
+--- !u!114 &394566479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 394566476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331aeefeb1133e344916124c070f9f78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelbuttons:
+  - {fileID: 1615074706}
+  - {fileID: 199154282}
+  - {fileID: 1676174729}
+  - {fileID: 663559776}
+  - {fileID: 501169492}
+  - {fileID: 742973680}
 --- !u!1 &454181210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,6 +2044,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 39662296}
+    - target: {fileID: 114710507085943982, guid: 334510ba9b6fc69409575e9031af89f3,
+        type: 2}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114710507085943982, guid: 334510ba9b6fc69409575e9031af89f3,
+        type: 2}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114710507085943982, guid: 334510ba9b6fc69409575e9031af89f3,
+        type: 2}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 334510ba9b6fc69409575e9031af89f3, type: 2}
   m_IsPrefabParent: 0
@@ -4032,6 +4066,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224343595207154904, guid: 334510ba9b6fc69409575e9031af89f3,
     type: 2}
   m_PrefabInternal: {fileID: 678271681}
+--- !u!114 &1615074706 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114710507085943982, guid: 334510ba9b6fc69409575e9031af89f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 678271681}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1627003145
 GameObject:
   m_ObjectHideFlags: 0
