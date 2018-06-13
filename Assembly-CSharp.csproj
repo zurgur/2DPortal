@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Engine\CameraController.cs" />
      <Compile Include="Assets\Scripts\Engine\GroundGenerator.cs" />
      <Compile Include="Assets\Scripts\Engine\MonsterController.cs" />
+     <Compile Include="Assets\Scripts\Engine\MonsterShooting.cs" />
      <Compile Include="Assets\Scripts\Engine\ObjectPooler.cs" />
      <Compile Include="Assets\Scripts\Engine\PlatformDestroyer.cs" />
      <Compile Include="Assets\Scripts\Engine\PlatformGenerator.cs" />

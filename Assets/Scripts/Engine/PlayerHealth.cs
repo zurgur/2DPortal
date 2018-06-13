@@ -4,14 +4,14 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour {
 
     [SerializeField]
-    private int health;
+    private float health;
 
     [SerializeField]
     private Slider healthBar;
 
     
 
-    public void HurtPlayer(int damage)
+    public void HurtPlayer(float damage)
     {
         health -= damage;
         healthBar.value = health;
