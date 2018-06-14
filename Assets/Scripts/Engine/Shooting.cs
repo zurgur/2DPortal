@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-
+    public bool Shotgun = true;
     public GameObject Bullet;
     Vector2 bulletPos;
     public float Damage = 10;
@@ -16,7 +16,9 @@ public class Shooting : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        firePoint = transform.Find("FirePoint");
+    GameObject Bullet = GameObject.Find("Bullet");
+
+    firePoint = transform.Find("FirePoint");
         if (firePoint == null)
         {
             Debug.LogError("No FirePoint located");
@@ -47,8 +49,21 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        if (Shotgun)
+        {
+            Bullet.GetComponent<BulletControl>().time = 1f;
+            Instantiate(Bullet, firePoint.transform.position, Quaternion.identity);
+            Bullet.GetComponent<BulletControl>().velY = 1;
+            Instantiate(Bullet, firePoint.transform.position, Quaternion.identity);
+            Bullet.GetComponent<BulletControl>().velY = -1;
+            Instantiate(Bullet, firePoint.transform.position, Quaternion.identity);
+            Bullet.GetComponent<BulletControl>().velY = 0;
+            Bullet.GetComponent<BulletControl>().time = 2f;
 
-        Instantiate(Bullet, firePoint.transform.position, Quaternion.identity);
-
+        }
+        else
+        {
+            Instantiate(Bullet, firePoint.transform.position, Quaternion.identity);
+        }
     }
 }

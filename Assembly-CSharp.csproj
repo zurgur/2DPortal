@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LevelSelect.cs" />
      <Compile Include="Assets\Scripts\Engine\BulletControl.cs" />
      <Compile Include="Assets\Scripts\Engine\CameraController.cs" />
      <Compile Include="Assets\Scripts\Engine\GroundGenerator.cs" />
@@ -67,6 +66,7 @@
      <Compile Include="Assets\Scripts\LevelGenerator\LevelGenerator.cs" />
      <Compile Include="Assets\Scripts\LevelGenerator\PlayerPrefsManager.cs" />
      <Compile Include="Assets\Scripts\Menus\GameOver.cs" />
+     <Compile Include="Assets\Scripts\Menus\LevelSelect.cs" />
      <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\SettingsMenu.cs" />

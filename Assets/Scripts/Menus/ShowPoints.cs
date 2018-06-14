@@ -13,6 +13,9 @@ public class ShowPoints : MonoBehaviour {
 	void Start () {
         int currentPoints = PlayerPrefs.GetInt(player);
         points.text = currentPoints.ToString();
-	}
+        PlayerPrefs.SetInt(player, 0);
+        PlayerPrefsManager.AddMoney(currentPoints);
+
+    }
 
 }

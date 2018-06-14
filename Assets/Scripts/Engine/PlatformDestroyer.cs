@@ -5,10 +5,16 @@ using UnityEngine;
 public class PlatformDestroyer : MonoBehaviour {
 	private GameObject destructionPoint;
 	private float platformWidth;
+	public bool isMirrored;
 
 	// Use this for initialization
 	void Start () {
-		destructionPoint = GameObject.Find ("PlatformDestructionPoint");
+		if(isMirrored) {
+			destructionPoint = GameObject.Find ("UndergroundDestructionPoint");
+		} else {
+			destructionPoint = GameObject.Find ("PlatformDestructionPoint");
+		}
+		
 		platformWidth = gameObject.GetComponent<BoxCollider2D>().size.x;
 	}
 	
