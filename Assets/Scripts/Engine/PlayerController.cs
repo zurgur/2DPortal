@@ -7,7 +7,9 @@ public class PlayerController : MonoBehaviour {
 	private float moveSpeed = 10;
 	private float jumpForce = 7;
 	public bool isMirrored;
-	private float jumpCount = 0;
+
+	private float jumpTime = 0.5f;
+	private float jumpTimeCounter;
 
 	private Rigidbody2D myRigidBody;
 
@@ -25,24 +27,30 @@ public class PlayerController : MonoBehaviour {
 		myCollider = GetComponent<Collider2D>();
 
 		myAnimator = GetComponent<Animator>();
+
+		jumpTimeCounter = jumpTime;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(jumpCount == 2) jumpCount = 0;
-
 		grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 		myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
  
-		if((grounded || jumpCount == 1) && Input.GetKeyDown(KeyCode.Space)) {
-			if(!isMirrored) {
+		if(grounded  && Input.GetKeyDown(KeyCode.Space)) {
+			if(!isMirrored) { 
 				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
 			} else {
 				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, -jumpForce);
 			}
-			jumpCount++;
 		}
 
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			if(jumpTimeCounter > 0){
+				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce); 
+				jumpTimeCounter -= Time.deltaTime;
+			}
+		}
+ 
 		myAnimator.SetFloat ( "Speed", myRigidBody.velocity.x );
 		myAnimator.SetBool ( "Grounded", grounded); 
 		

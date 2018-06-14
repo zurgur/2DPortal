@@ -1644,6 +1644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generationPoint: {fileID: 0}
+  maxHeightPoint: {fileID: 0}
   objectPools:
   - {fileID: 1530544667}
   - {fileID: 453043327}
@@ -1853,6 +1854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   generationPoint: {fileID: 1245221390}
+  maxHeightPoint: {fileID: 0}
   objectPools:
   - {fileID: 2100511546}
   - {fileID: 208061945}
@@ -1940,7 +1942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thePlatform: {fileID: 1315463283251618, guid: 8a16eb38eb62a4b15b7d19ef69704b01,
     type: 2}
-  generationPoint: {fileID: 0}
+  generationPoint: {fileID: 1094138694}
   theObjectPool: {fileID: 333530918}
 --- !u!1 &1640782385
 GameObject:
