@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,5 +21,18 @@ public class LevelSelect : MonoBehaviour {
             
         }
 	}
+    public void buyItem(int index)
+    {
+        int cost = Int32.Parse(itemButtons[index].GetComponentInChildren<TextMeshProUGUI>().text);
+        int walet = PlayerPrefsManager.GetMoney();
+        if(cost > walet)
+        {
+            Debug.Log("not enugh funds");
+            return;
+        }
+        PlayerPrefsManager.AddMoney(-cost);
+        PlayerPrefsManager.UnlockItem(index);
+        Start();
+    }
 	
 }
