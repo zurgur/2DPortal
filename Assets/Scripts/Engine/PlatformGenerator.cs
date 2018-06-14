@@ -10,13 +10,13 @@ public class PlatformGenerator : MonoBehaviour {
 
 	private int platformSelector;
 	private float distanceBetween;
-	private float distanceBetweenMin = 0;
-	private float distanceBetweenMax = 5;
+	private float distanceBetweenMin = 1;
+	private float distanceBetweenMax = 4;
 
 	private float minHeight;
 	public Transform maxHeightPoint;
 	private float maxHeight;
-	private float maxHeightChange = 5;
+	private float maxHeightChange = 10;
 	private float heightChange;
 
 
