@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 4492f880a7a40084f99c62ccbfc993ed
+guid: 63402b9c8f5272e429480366a2193e58
 TextureImporter:
   fileIDToRecycleName:
-    21300000: man_jump_0
-    21300002: man_jump_1
-    21300004: man_jump_2
+    21300000: flash_spritesheet_run_0
+    21300002: flash_spritesheet_run_1
+    21300004: flash_spritesheet_run_2
+    21300006: flash_spritesheet_run_3
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -129,61 +130,81 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: man_jump_0
+      name: flash_spritesheet_run_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 8
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5
+        y: 7
+        width: 22
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a6ab6bc37a6ce347bceac07ab74613e
+      spriteID: 8a37376c0d235bb478f581abe918ea85
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: man_jump_1
+      name: flash_spritesheet_run_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 7
-        width: 13
+        x: 38
+        y: 6
+        width: 21
         height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1fcb6d95aba4e94d9300bba6fffcf59
+      spriteID: 694e2aaa333dd674197e199608163854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: man_jump_2
+      name: flash_spritesheet_run_2
       rect:
         serializedVersion: 2
-        x: 73
+        x: 71
         y: 7
-        width: 13
+        width: 19
         height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed8fabda632af346a0e3912c590c94f
+      spriteID: 885c247a584fedb43b604eb17da0f3a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flash_spritesheet_run_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 7
+        width: 21
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651e534c1ed880d49b6c394a4eb74681
       vertices: []
       indices: 
       edges: []
@@ -191,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 47513b8c69f00b544a1475be018b978c
+    spriteID: 7f30fb48b674fc94b81a62a8cbbc5405
     vertices: []
     indices: 
     edges: []

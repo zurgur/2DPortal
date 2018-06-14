@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	private float moveSpeed = 12;
+	private float moveSpeed = 10;
 	private float jumpForce = 12;
+
 	public bool isMirrored;
+
+	private float speedMultiplier = 1.05f;
+	private float speedIncreaseMilestone = 100f;
+	private float speedMilestoneCount;
 
 	private float jumpTime = 0.25f;
 	private float jumpTimeCounter;
@@ -29,13 +34,33 @@ public class PlayerController : MonoBehaviour {
 		myAnimator = GetComponent<Animator>();
 
 		jumpTimeCounter = jumpTime;
+
+		speedMilestoneCount = speedIncreaseMilestone;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
 		myRigidBody.velocity = new Vector2(moveSpeed, myRigidBody.velocity.y);
  
+		JumpingUpdate();
+
+		if(transform.position.x > speedMilestoneCount) {
+
+			speedMilestoneCount += speedIncreaseMilestone;
+
+			speedIncreaseMilestone *= speedMultiplier;
+
+			moveSpeed *= speedMultiplier;
+		}
+ 
+		myAnimator.SetFloat ( "Speed", myRigidBody.velocity.x );
+		myAnimator.SetBool ( "Grounded", grounded); 
+		
+	}
+
+	void JumpingUpdate() {
+		grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
+
 		if(grounded  && Input.GetKeyDown(KeyCode.Space)) {
 			if(!isMirrored) { 
 				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
@@ -58,10 +83,6 @@ public class PlayerController : MonoBehaviour {
 		if(grounded) {
 			jumpTimeCounter = jumpTime;
 		}
- 
-		myAnimator.SetFloat ( "Speed", myRigidBody.velocity.x );
-		myAnimator.SetBool ( "Grounded", grounded); 
-		
 	}
 
     private void OnTriggerEnter2D(Collider2D other)

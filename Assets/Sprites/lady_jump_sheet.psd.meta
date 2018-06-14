@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: f44c5c48638fec442bba6c8cc2fdc026
+guid: 7c2b8b7adfbeb4445989ca88fa8ea819
 TextureImporter:
   fileIDToRecycleName:
-    21300000: lady_run_0
-    21300002: lady_run_1
-    21300004: lady_run_2
-    21300006: lady_run_3
+    21300000: lady_jump_sheet_0
+    21300002: lady_jump_sheet_1
+    21300004: lady_jump_sheet_2
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -45,8 +44,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -130,81 +129,61 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lady_run_0
+      name: lady_jump_sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 7
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 9
+        y: 4
+        width: 14
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1066d345f5bd5324e880f6464a92fe23
+      spriteID: 8e8d7885e234b92458a55b47b421a2c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lady_run_1
+      name: lady_jump_sheet_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 7
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 40
+        y: 4
+        width: 14
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a518db6393e3f488d785f2ef821d56
+      spriteID: 86808d0e7c4871e489f6673eeb927978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lady_run_2
+      name: lady_jump_sheet_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 7
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 4
+        width: 14
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0037ef3bca96a7945a9a15b6cc7af0c5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lady_run_3
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 7
-        width: 23
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4df0cb91584031e48a6f3777e3f0c6d6
+      spriteID: 366b798e749832e41ac9cf6e48a65d41
       vertices: []
       indices: 
       edges: []
@@ -212,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a8dccbb4abbafe248a84d5c9bbb419f6
+    spriteID: ab8160c316e30e24ab9429c27fc02292
     vertices: []
     indices: 
     edges: []
