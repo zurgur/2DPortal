@@ -1459,7 +1459,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1001341039
 GameObject:
@@ -2202,6 +2202,12 @@ Prefab:
       propertyPath: m_GravityScale
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 212592440407071056, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4492f880a7a40084f99c62ccbfc993ed,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a97843474a3b9d478248bf2df4d0f43, type: 2}
   m_IsPrefabParent: 0
@@ -2448,7 +2454,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4533639092883952, guid: 3e6c12ae807164448b7e6fae8b499cd5, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1652612841593870, guid: 3e6c12ae807164448b7e6fae8b499cd5, type: 2}
       propertyPath: m_Name
