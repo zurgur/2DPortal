@@ -213,7 +213,8 @@ GameObject:
   - component: {fileID: 4925721663674302}
   - component: {fileID: 61884516948199150}
   - component: {fileID: 114322683459297418}
-  - component: {fileID: 114976447581238960}
+  - component: {fileID: 114707599787521178}
+  - component: {fileID: 114385393361117512}
   m_Layer: 8
   m_Name: Underground
   m_TagString: Untagged
@@ -1167,7 +1168,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1315463283251618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.253, z: 0.03683744}
+  m_LocalPosition: {x: 0, y: -5.253, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4073183941877750}
@@ -1248,7 +1249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6bb2c2482d3443a8f497da4ed40ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114976447581238960
+--- !u!114 &114385393361117512
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1259,7 +1260,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fd0eaf080bb4c32821dd5dde3133cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destructionPoint: {fileID: 0}
+--- !u!114 &114707599787521178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1315463283251618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fd0eaf080bb4c32821dd5dde3133cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212030065078328502
 SpriteRenderer:
   m_ObjectHideFlags: 1
