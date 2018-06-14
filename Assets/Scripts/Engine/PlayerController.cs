@@ -20,16 +20,13 @@ public class PlayerController : MonoBehaviour {
 
 	public bool grounded;
 	public LayerMask whatIsGround; 
-
-	private Collider2D myCollider;
-
+	public Transform groundCheck;
+	public float groundCheckRadius;
 	private Animator myAnimator;
 
 	// Use this for initialization
 	void Start () {
 		myRigidBody = GetComponent<Rigidbody2D>();
-
-		myCollider = GetComponent<Collider2D>();
 
 		myAnimator = GetComponent<Animator>();
 
@@ -59,7 +56,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void JumpingUpdate() {
-		grounded = Physics2D.IsTouchingLayers(myCollider, whatIsGround);
+		grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
 		if(grounded  && Input.GetKeyDown(KeyCode.Space)) {
 			if(!isMirrored) { 

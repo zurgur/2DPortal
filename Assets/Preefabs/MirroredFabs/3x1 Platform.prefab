@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fd0eaf080bb4c32821dd5dde3133cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMirrored: 0
 --- !u!212 &212518063386463462
 SpriteRenderer:
   m_ObjectHideFlags: 1
