@@ -49,8 +49,12 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        FindObjectOfType<CameraController>().StartShake(0.1f, 0.1f);
+        FindObjectOfType<AudioManager>().play("bulletFire");
+
         if (Shotgun)
         {
+
             Bullet.GetComponent<BulletControl>().time = 1f;
             Instantiate(Bullet, firePoint.transform.position, Quaternion.identity);
             Bullet.GetComponent<BulletControl>().velY = 1;

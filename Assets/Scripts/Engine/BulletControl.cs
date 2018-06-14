@@ -13,7 +13,6 @@ public class BulletControl : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        FindObjectOfType<AudioManager>().play("bulletFire");
 
         rb = GetComponent<Rigidbody2D>();
     }
