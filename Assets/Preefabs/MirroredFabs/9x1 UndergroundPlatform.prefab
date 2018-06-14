@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4581349018704124}
   - component: {fileID: 61232669313931206}
-  - component: {fileID: 114179979370404050}
+  - component: {fileID: 114000785165055652}
   m_Layer: 8
   m_Name: 9x1 UndergroundPlatform
   m_TagString: Untagged
@@ -231,7 +231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1433227224203500}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.019999774}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4442196172278554}
@@ -336,7 +336,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &114179979370404050
+--- !u!114 &114000785165055652
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

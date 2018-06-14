@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4288915341971342}
   - component: {fileID: 61761396796215050}
-  - component: {fileID: 114977655367693018}
+  - component: {fileID: 114321893479010118}
   m_Layer: 8
   m_Name: 3x1 Platform
   m_TagString: Untagged
@@ -156,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &114977655367693018
+--- !u!114 &114321893479010118
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4424008161776700}
   - component: {fileID: 61779601030089670}
-  - component: {fileID: 114969189331272030}
+  - component: {fileID: 114871932820649722}
   m_Layer: 8
   m_Name: 3x1 UndergroundPlatform
   m_TagString: Untagged
@@ -156,7 +156,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &114969189331272030
+--- !u!114 &114871932820649722
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
