@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{624CB79C-FBDD-EB4F-FC75-EDDA7E4FA4D8}</ProjectGuid>
+    <ProjectGuid>{50C1E828-2D63-98FA-9164-666030ED9A7A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -136,16 +136,16 @@
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>/Users/meatyminx/Documents/Repos/Current/echo-chamber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>/Users/meatyminx/Documents/Repos/Current/the-upside-down/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/Users/meatyminx/Documents/Repos/Current/echo-chamber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>/Users/meatyminx/Documents/Repos/Current/the-upside-down/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.postprocessing.Editor">
- <HintPath>/Users/meatyminx/Documents/Repos/Current/echo-chamber/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+ <HintPath>/Users/meatyminx/Documents/Repos/Current/the-upside-down/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.postprocessing.Runtime">
- <HintPath>/Users/meatyminx/Documents/Repos/Current/echo-chamber/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
+ <HintPath>/Users/meatyminx/Documents/Repos/Current/the-upside-down/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -343,10 +343,10 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
- <HintPath>/Users/meatyminx/Documents/Repos/Current/echo-chamber/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
+ <HintPath>/Users/meatyminx/Documents/Repos/Current/the-upside-down/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
  </Reference>
  <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
- <HintPath>/Users/meatyminx/Documents/Repos/Current/echo-chamber/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
+ <HintPath>/Users/meatyminx/Documents/Repos/Current/the-upside-down/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Users/meatyminx/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
