@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
+
 
 public class Shooting : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class Shooting : MonoBehaviour
     Vector2 bulletPos;
     public float Damage = 10;
     public float fireRate = 0.5f;
+
+    [SerializeField]
+    private bool player1;
 
     float timeToFire = 0.0f;
     Transform firePoint;
@@ -31,14 +36,23 @@ public class Shooting : MonoBehaviour
     {
         if (fireRate == 0)
         {
-            if (Input.GetButtonDown("Fire1"))
+            if(CrossPlatformInputManager.GetButton("Fire1") && player1)
+            {
+                Shoot();
+            }
+            if (CrossPlatformInputManager.GetButton("Fire2") && !player1)
             {
                 Shoot();
             }
         }
         else
         {
-            if (Input.GetButton("Fire1") && Time.time > timeToFire)
+            if (CrossPlatformInputManager.GetButton("Fire1") && Time.time > timeToFire && player1)
+            {
+                timeToFire = Time.time + 1 / fireRate;
+                Shoot();
+            }
+            if (CrossPlatformInputManager.GetButton("Fire2") && Time.time > timeToFire && !player1)
             {
                 timeToFire = Time.time + 1 / fireRate;
                 Shoot();

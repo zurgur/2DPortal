@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
+
 
 public class PlayerController : MonoBehaviour {
 
 	private float moveSpeed = 10;
 	private float jumpForce = 12;
+
+    [SerializeField]
+    private bool playerOne;
 
 	public bool isMirrored;
 

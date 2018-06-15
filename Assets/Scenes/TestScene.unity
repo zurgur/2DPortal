@@ -2482,6 +2482,16 @@ Prefab:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 463683519}
+    - target: {fileID: 114871134169439076, guid: a0085c86e74fbbe4d8db805de3503c67,
+        type: 2}
+      propertyPath: playerOne
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114887034581200920, guid: a0085c86e74fbbe4d8db805de3503c67,
+        type: 2}
+      propertyPath: player1
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61167788711612518, guid: a0085c86e74fbbe4d8db805de3503c67, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a0085c86e74fbbe4d8db805de3503c67, type: 2}
