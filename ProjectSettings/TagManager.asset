@@ -6,6 +6,8 @@ TagManager:
   tags:
   - HelthUI
   - GameOver
+  - PlayerOne
+  - PlayerTwo
   layers:
   - Default
   - TransparentFX
