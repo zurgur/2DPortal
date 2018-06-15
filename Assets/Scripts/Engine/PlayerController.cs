@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour {
 	void JumpingUpdate() {
 		grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
-		if(grounded  && Input.GetKeyDown(KeyCode.Space)) {
+		if(grounded  && CrossPlatformInputManager.GetButton("Jump1") && playerOne) {
 			if(!isMirrored) { 
 				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
 			} else {
@@ -71,18 +71,52 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-		if(Input.GetKey(KeyCode.Space)) {
+		if(CrossPlatformInputManager.GetButton("Jump1") && playerOne) {
 			if(jumpTimeCounter > 0){
 				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce); 
 				jumpTimeCounter -= Time.deltaTime;
 			}
 		}
 
-		if(Input.GetKeyUp(KeyCode.Space)) {
+		if(CrossPlatformInputManager.GetButtonUp("Jump1") && playerOne) {
 			jumpTimeCounter = 0;
 		}
+        // player 2
+        if (grounded && CrossPlatformInputManager.GetButton("Jump2") && !playerOne)
+        {
+            if (!isMirrored)
+            {
+                myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
+            }
+            else
+            {
+                myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, -jumpForce);
+            }
+        }
+        
+        if (CrossPlatformInputManager.GetButton("Jump2") && !playerOne)
+        {
+            if (jumpTimeCounter > 0)
+            {
+                if (!isMirrored)
+                {
+                    myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                else
+                {
+                    myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, -jumpForce);
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+            }
+        }
 
-		if(grounded) {
+        if (CrossPlatformInputManager.GetButtonUp("Jump2") && !playerOne)
+        {
+            jumpTimeCounter = 0;
+        }
+        
+        if (grounded) {
 			jumpTimeCounter = jumpTime;
 		}
 	}
