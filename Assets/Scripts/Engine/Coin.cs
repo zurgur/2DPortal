@@ -12,18 +12,39 @@ public class Coin : MonoBehaviour {
     private string playerTwo = "player2";
 
     [SerializeField]
+    private float moveSpeed;
+
+    [SerializeField]
     private int points = 10;
 
-    void OnTriggerEnter2D(Collider2D col)
+    private Vector3 TargetPos;
+    private GameObject player;
+    private bool magnet;
+
+    void Awake()
     {
-        if(col.tag == "PlayerOne")
+        magnet = PlayerPrefsManager.IsItemnlocked(1);
+    }
+
+    void Update()
+    {
+        if (player && magnet)
+        {
+            TargetPos = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, TargetPos, moveSpeed * Time.deltaTime);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "PlayerOne")
         {
             int current = PlayerPrefs.GetInt(playerOne);
             PlayerPrefs.SetInt(playerOne, current + points);
             Instantiate(particle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        if(col.tag == "PlayerTwo")
+        if(col.gameObject.tag == "PlayerTwo")
         {
             int current = PlayerPrefs.GetInt(playerTwo);
             PlayerPrefs.SetInt(playerTwo, current + points);
@@ -32,4 +53,10 @@ public class Coin : MonoBehaviour {
 
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+       player = other.gameObject;
+        
+    }
+
 }
