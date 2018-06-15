@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Engine\MonsterController.cs" />
      <Compile Include="Assets\Scripts\Engine\MonsterShooting.cs" />
      <Compile Include="Assets\Scripts\Engine\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\Engine\Parallaxing.cs" />
      <Compile Include="Assets\Scripts\Engine\PlatformDestroyer.cs" />
      <Compile Include="Assets\Scripts\Engine\PlatformGenerator.cs" />
      <Compile Include="Assets\Scripts\Engine\PlayerController.cs" />
