@@ -506,6 +506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1906835841}
+  player: {fileID: 1765353403}
+  moveSpeed: 3
 --- !u!1 &316027399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1565,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 1669766439}
+  player: {fileID: 1706183950}
+  moveSpeed: 3
 --- !u!81 &1001341042
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2213,6 +2217,56 @@ Prefab:
       propertyPath: m_TagString
       value: PlayerTwo
       objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 61165502564996842, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043502543129316, guid: 0a97843474a3b9d478248bf2df4d0f43,
+        type: 2}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 146083969}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a97843474a3b9d478248bf2df4d0f43, type: 2}
   m_IsPrefabParent: 0
@@ -2313,6 +2367,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1609880359}
   m_Script: {fileID: 11500000, guid: 97a38d4542f7642c78fd8504742da1d6, type: 3}
+--- !u!1 &1706183950 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1408190934787766, guid: 0a97843474a3b9d478248bf2df4d0f43,
+    type: 2}
+  m_PrefabInternal: {fileID: 1609880359}
 --- !u!1001 &1738771204
 Prefab:
   m_ObjectHideFlags: 0
@@ -2418,7 +2477,13 @@ Prefab:
       propertyPath: m_TagString
       value: PlayerOne
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114871134169439076, guid: a0085c86e74fbbe4d8db805de3503c67,
+        type: 2}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 463683519}
+    m_RemovedComponents:
+    - {fileID: 61167788711612518, guid: a0085c86e74fbbe4d8db805de3503c67, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a0085c86e74fbbe4d8db805de3503c67, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1765353403 stripped
@@ -2438,7 +2503,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5625}
+  m_Offset: {x: 0, y: 0.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}

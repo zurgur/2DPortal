@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7e93776b103494ba3e09c687923315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle: {fileID: 1992072129031352, guid: c3cade288a6ec374e9ab9505632431e4, type: 2}
+  particle: {fileID: 1224620851742886, guid: 1ef610fa013faee40814b04261db2306, type: 2}
   playerOne: player1
   playerTwo: player2
   points: 10

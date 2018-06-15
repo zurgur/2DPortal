@@ -92,6 +92,8 @@ MonoBehaviour:
   velX: 20
   velY: 0
   rb: {fileID: 0}
+  time: 2
+  particle: {fileID: 1111882820039828, guid: 89a751d4fda158d4fb0693da8303a582, type: 2}
 --- !u!212 &212044046797822054
 SpriteRenderer:
   m_ObjectHideFlags: 1
