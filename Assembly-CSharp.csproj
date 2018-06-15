@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Coin.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -62,6 +61,7 @@
      <Compile Include="Assets\Scripts\Engine\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Engine\BulletControl.cs" />
      <Compile Include="Assets\Scripts\Engine\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Engine\Coin.cs" />
      <Compile Include="Assets\Scripts\Engine\GroundGenerator.cs" />
      <Compile Include="Assets\Scripts\Engine\MonsterController.cs" />
      <Compile Include="Assets\Scripts\Engine\MonsterShooting.cs" />

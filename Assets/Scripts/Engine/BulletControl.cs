@@ -9,6 +9,7 @@ public class BulletControl : MonoBehaviour
     public float velY = 0f;
     public Rigidbody2D rb;
     public float time = 5f;
+    public GameObject particle;
 
     // Use this for initialization
     void Start()
@@ -28,6 +29,7 @@ public class BulletControl : MonoBehaviour
     {
         if (other.gameObject.layer == 8)
         {
+            Instantiate(particle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
