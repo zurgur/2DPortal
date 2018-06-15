@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Engine\PlatformGenerator.cs" />
      <Compile Include="Assets\Scripts\Engine\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Engine\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Engine\portal.cs" />
      <Compile Include="Assets\Scripts\Engine\Shooting.cs" />
      <Compile Include="Assets\Scripts\Engine\Sound.cs" />
      <Compile Include="Assets\Scripts\LevelGenerator\ColorToPrefs.cs" />

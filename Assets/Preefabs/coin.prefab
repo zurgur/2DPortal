@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212675193624696874}
   - component: {fileID: 114562631510131550}
   - component: {fileID: 58190168488564168}
+  - component: {fileID: 58596385237596468}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1965936808505930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -9.15, y: -1.33, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,12 +52,27 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!58 &58596385237596468
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965936808505930}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5
 --- !u!114 &114562631510131550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,6 +87,7 @@ MonoBehaviour:
   particle: {fileID: 1224620851742886, guid: 1ef610fa013faee40814b04261db2306, type: 2}
   playerOne: player1
   playerTwo: player2
+  moveSpeed: 6
   points: 10
 --- !u!212 &212675193624696874
 SpriteRenderer:

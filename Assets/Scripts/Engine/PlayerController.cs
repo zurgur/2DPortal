@@ -73,9 +73,17 @@ public class PlayerController : MonoBehaviour {
 
 		if(CrossPlatformInputManager.GetButton("Jump1") && playerOne) {
 			if(jumpTimeCounter > 0){
-				myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce); 
-				jumpTimeCounter -= Time.deltaTime;
-			}
+                if (!isMirrored)
+                {
+                    myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                else
+                {
+                    myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, -jumpForce);
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+            }
 		}
 
 		if(CrossPlatformInputManager.GetButtonUp("Jump1") && playerOne) {
@@ -130,5 +138,13 @@ public class PlayerController : MonoBehaviour {
             GetComponent<PlayerHealth>().HurtPlayer(5); 
         }
 
+    }
+    public void Flip()
+    {
+        if(isMirrored) transform.position += new Vector3(0, 10, 0);
+        else transform.position += new Vector3(0, -10, 0);
+        isMirrored = !isMirrored;
+        transform.Rotate(new Vector3(180,0,0));
+        GetComponent<Rigidbody2D>().gravityScale = -GetComponent<Rigidbody2D>().gravityScale;
     }
 }
