@@ -9,9 +9,16 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField]
     private Slider healthBar;
 
+    [SerializeField]
+    private int maxHP;
+
+
     void Start()
     {
-        HurtPlayer(50);
+        if (PlayerPrefsManager.IsItemnlocked(2))
+        {
+            addMaxHelth(100);
+        }
     }
 
     public void HurtPlayer(float damage)
@@ -25,5 +32,17 @@ public class PlayerHealth : MonoBehaviour {
         }
         
     }
-	
+    public void resetHelth()
+    {
+        health = maxHP;
+        healthBar.maxValue = maxHP;
+        healthBar.value = health;
+    }
+    public void addMaxHelth(int hp)
+    {
+        maxHP += hp;
+        resetHelth();
+
+    }
+
 }
