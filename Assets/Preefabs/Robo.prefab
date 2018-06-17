@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212920302478960586}
   - component: {fileID: 95503326436054264}
   - component: {fileID: 114146687168957720}
-  - component: {fileID: 114019172579812736}
   - component: {fileID: 50704454161503176}
   - component: {fileID: 61798643957284222}
   - component: {fileID: 114107787821794070}
@@ -69,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1298891498741670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.97, y: -0.686, z: 0}
+  m_LocalPosition: {x: -1.08, y: -0.686, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 4303955449833784}
@@ -138,19 +137,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114019172579812736
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1027931536826352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 187afcb13796da04ab8850d3d55a9714, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  isMirrored: 0
 --- !u!114 &114107787821794070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   maxHP: 100
+  moveSpeed: 10
 --- !u!114 &114146687168957720
 MonoBehaviour:
   m_ObjectHideFlags: 1

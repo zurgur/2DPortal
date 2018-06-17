@@ -1,5 +1,6 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bossHealth : MonoBehaviour {
     [SerializeField]
@@ -30,6 +31,7 @@ public class bossHealth : MonoBehaviour {
 
         if (health <= 0)
         {
+            SceneManager.LoadScene(1);
             Destroy(gameObject);
         }
 
