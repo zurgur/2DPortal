@@ -18,9 +18,7 @@ public class PlatformGenerator : MonoBehaviour {
 	private float maxHeight;
 	private float maxHeightChange = 10;
 	private float heightChange;
-    public bool generate;
-
-
+    public bool generate = true;
 
 	public ObjectPooler[] objectPools;
 

@@ -16,6 +16,9 @@ public class DistanceManager : MonoBehaviour {
 
     private float timeToShow = 10;
 
+    [SerializeField]
+    private
+
     void Start () {
         maxDistance = PlayerPrefsManager.getDistance();
 	}
@@ -31,7 +34,11 @@ public class DistanceManager : MonoBehaviour {
             timeToShow -= Time.deltaTime;
             if(timeToShow <= 0)
             {
-
+                PlatformGenerator[] generators = GetComponents<PlatformGenerator>();
+                foreach (PlatformGenerator p in generators)
+                {
+                    //p.GetComponent<PlatformGenerator>().generate;
+                }
                 panel.SetActive(false);
             }
         }
