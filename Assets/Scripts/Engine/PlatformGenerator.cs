@@ -18,6 +18,7 @@ public class PlatformGenerator : MonoBehaviour {
 	private float maxHeight;
 	private float maxHeightChange = 10;
 	private float heightChange;
+    public bool generate;
 
 
 
@@ -26,10 +27,13 @@ public class PlatformGenerator : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		platformWidths = new float[objectPools.Length];
+        if (generate)
+        {
+		    for(int i = 0; i < objectPools.Length; i++) {
+			    platformWidths[i] = objectPools[i].pooledObject.GetComponent<BoxCollider2D>().size.x;
+		    }
 
-		for(int i = 0; i < objectPools.Length; i++) {
-			platformWidths[i] = objectPools[i].pooledObject.GetComponent<BoxCollider2D>().size.x;
-		}
+        }
 
 		minHeight = transform.position.y;
 		maxHeight = maxHeightPoint.position.y;
@@ -38,7 +42,7 @@ public class PlatformGenerator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			if(transform.position.x < generationPoint.position.x) {
+			if(transform.position.x < generationPoint.position.x && generate) {
 				platformSelector = Random.Range(0, objectPools.Length);
 				distanceBetween = Random.Range(distanceBetweenMin, distanceBetweenMax);
 

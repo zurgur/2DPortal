@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 
@@ -28,7 +29,7 @@ public class PlayerHealth : MonoBehaviour {
 
         if (health<=0)
         {
-            Debug.Log("dead need to implament deth screen");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         
     }

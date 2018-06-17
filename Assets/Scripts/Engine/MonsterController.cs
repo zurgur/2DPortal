@@ -6,6 +6,7 @@ public class MonsterController : MonoBehaviour
 {
     private float health = 20;
 
+    [SerializeField]
     private float moveSpeed = 10;
 
     public bool isMirrored;

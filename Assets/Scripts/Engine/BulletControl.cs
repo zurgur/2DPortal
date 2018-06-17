@@ -10,6 +10,7 @@ public class BulletControl : MonoBehaviour
     public Rigidbody2D rb;
     public float time = 5f;
     public GameObject particle;
+    public int damage = 10;
 
     // Use this for initialization
     void Start()
@@ -30,6 +31,11 @@ public class BulletControl : MonoBehaviour
         if (other.gameObject.layer == 8)
         {
             Instantiate(particle, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+        if(other.tag == "PlayerOne" || other.tag == "PlayerTwo")
+        {
+            other.gameObject.GetComponent<PlayerHealth>().HurtPlayer(damage);
             Destroy(gameObject);
         }
 

@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Shooting : MonoBehaviour
 {
-    public bool Shotgun = true;
+    public bool Shotgun = false;
     public GameObject Bullet;
     Vector2 bulletPos;
     public float Damage = 10;
@@ -21,6 +21,7 @@ public class Shooting : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        Shotgun = PlayerPrefsManager.IsItemnlocked(0);
     GameObject Bullet = GameObject.Find("Bullet");
 
     firePoint = transform.Find("FirePoint");
