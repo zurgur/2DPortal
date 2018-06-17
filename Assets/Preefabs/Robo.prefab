@@ -148,9 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff4e0a3bf5a1024186d10aae5b443b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 114730534630663774, guid: c99a4692ce0e18b48ba8a7ab2a1468e4,
+    type: 2}
   maxHP: 100
   moveSpeed: 10
+  generator: {fileID: 0}
 --- !u!114 &114146687168957720
 MonoBehaviour:
   m_ObjectHideFlags: 1

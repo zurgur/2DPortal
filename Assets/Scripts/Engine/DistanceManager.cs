@@ -19,6 +19,12 @@ public class DistanceManager : MonoBehaviour {
     [SerializeField]
     public float distance;
 
+    [SerializeField]
+    private GameObject generator;
+
+    [SerializeField]
+    private GameObject boss;
+
     void Start () {
         maxDistance = PlayerPrefsManager.getDistance();
 	}
@@ -34,21 +40,17 @@ public class DistanceManager : MonoBehaviour {
             timeToShow -= Time.deltaTime;
             if(timeToShow <= 0)
             {
-                PlatformGenerator[] generators = GetComponents<PlatformGenerator>();
-                foreach (PlatformGenerator p in generators)
-                {
-                    //p.GetComponent<PlatformGenerator>().generate;
-                }
                 panel.SetActive(false);
             }
         }
 
         if(distance > 1000)
         {
-            PlayerPrefsManager.setDistance(distance);
-            SceneManager.LoadScene(3);
+            generator.GetComponent<PlatformGenerator>().Generate = false;
+            Instantiate(boss, transform.position + new Vector3(30, 100, 0), Quaternion.identity);
+
         }
-	}
+    }
 
 
 }

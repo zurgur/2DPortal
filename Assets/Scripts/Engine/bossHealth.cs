@@ -15,10 +15,13 @@ public class bossHealth : MonoBehaviour {
     [SerializeField]
     private float moveSpeed = 10;
 
+    [SerializeField]
+    private GameObject generator;
+
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-
+       
         health = maxHP;
         healthBar.maxValue = maxHP;
         healthBar.value = health;
@@ -31,7 +34,7 @@ public class bossHealth : MonoBehaviour {
 
         if (health <= 0)
         {
-            SceneManager.LoadScene(1);
+            GameObject.Find("PlatformGenerator").GetComponent<PlatformGenerator>().Generate = false;
             Destroy(gameObject);
         }
 

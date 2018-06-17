@@ -18,12 +18,25 @@ public class PlatformGenerator : MonoBehaviour {
 	private float maxHeight;
 	private float maxHeightChange = 10;
 	private float heightChange;
-    public bool generate = true;
+    private bool generate = true;
 
-	public ObjectPooler[] objectPools;
+    public ObjectPooler[] objectPools;
 
-	// Use this for initialization
-	void Start () {
+    public bool Generate
+    {
+        get
+        {
+            return generate;
+        }
+
+        set
+        {
+            generate = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 		platformWidths = new float[objectPools.Length];
         if (generate)
         {
