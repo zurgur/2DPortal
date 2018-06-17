@@ -13,6 +13,7 @@ public class PlayerPrefsManager : MonoBehaviour
     const string SHIELD_KEY = "shield_unlocked";
     const string HEALTH_UPP_KEY = "health_up_unlocked";
     const string MONEY_KEY = "money_amount";
+    const string DISTANC_KEY = "distance_key";
 
     public static void SetMasterVolume(float volume)
     {
@@ -132,6 +133,18 @@ public class PlayerPrefsManager : MonoBehaviour
                 break;
             default:
                 break;
+        }
+    }
+    public static float getDistance()
+    {
+        return PlayerPrefs.GetFloat(DISTANC_KEY);
+    }
+    public static void setDistance(float newDistance)
+    {
+        float current = PlayerPrefs.GetFloat(DISTANC_KEY);
+        if(current < newDistance)
+        {
+            PlayerPrefs.SetFloat(DISTANC_KEY, newDistance);
         }
     }
 }
