@@ -38,6 +38,10 @@ public class BulletControl : MonoBehaviour
             other.gameObject.GetComponent<PlayerHealth>().HurtPlayer(damage);
             Destroy(gameObject);
         }
+        if (other.gameObject.GetComponent<bossHealth>())
+        {
+            other.gameObject.GetComponent<bossHealth>().hurtBoss(damage);
+        }
 
     }
 }

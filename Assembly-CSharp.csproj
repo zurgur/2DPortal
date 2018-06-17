@@ -59,6 +59,7 @@
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\Scripts\Engine\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\Engine\bossHealth.cs" />
      <Compile Include="Assets\Scripts\Engine\BulletControl.cs" />
      <Compile Include="Assets\Scripts\Engine\CameraController.cs" />
      <Compile Include="Assets\Scripts\Engine\Coin.cs" />

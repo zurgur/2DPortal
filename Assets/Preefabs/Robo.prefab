@@ -25,8 +25,24 @@ GameObject:
   - component: {fileID: 114019172579812736}
   - component: {fileID: 50704454161503176}
   - component: {fileID: 61798643957284222}
+  - component: {fileID: 114107787821794070}
   m_Layer: 0
   m_Name: Robo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1298891498741670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4891511115548672}
+  m_Layer: 0
+  m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,8 +57,22 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4891511115548672}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4891511115548672
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298891498741670}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.97, y: -0.686, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4303955449833784}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50704454161503176
@@ -64,7 +94,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61798643957284222
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -121,6 +151,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   isMirrored: 0
+--- !u!114 &114107787821794070
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1027931536826352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff4e0a3bf5a1024186d10aae5b443b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  maxHP: 100
 --- !u!114 &114146687168957720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1835087657865938, guid: 29cd2ac9b572d844d96c1ced153643bd, type: 2}
   Damage: 5
-  fireRate: 5
+  fireRate: 1
 --- !u!212 &212920302478960586
 SpriteRenderer:
   m_ObjectHideFlags: 1
