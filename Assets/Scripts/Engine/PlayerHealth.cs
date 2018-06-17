@@ -29,7 +29,9 @@ public class PlayerHealth : MonoBehaviour {
 
         if (health<=0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            float length = GetComponent<DistanceManager>().distance;
+            PlayerPrefsManager.setDistance(length);
+            SceneManager.LoadScene(2);
         }
         
     }

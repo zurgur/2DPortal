@@ -17,7 +17,7 @@ public class DistanceManager : MonoBehaviour {
     private float timeToShow = 10;
 
     [SerializeField]
-    private
+    public float distance;
 
     void Start () {
         maxDistance = PlayerPrefsManager.getDistance();
@@ -25,7 +25,7 @@ public class DistanceManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        float distance = Vector3.Distance(this.transform.position, new Vector3(0, 0, 0));
+        distance = Vector3.Distance(this.transform.position, new Vector3(0, 0, 0));
 
         if(distance > maxDistance && timeToShow > 0)
         {
@@ -49,5 +49,6 @@ public class DistanceManager : MonoBehaviour {
             SceneManager.LoadScene(3);
         }
 	}
+
 
 }

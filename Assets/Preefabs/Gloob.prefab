@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114470401262344172}
   - component: {fileID: 114887034581200920}
   - component: {fileID: 61042120537927504}
+  - component: {fileID: 114802347406687922}
   m_Layer: 0
   m_Name: Gloob
   m_TagString: PlayerOne
@@ -181,6 +182,20 @@ MonoBehaviour:
   health: 100
   healthBar: {fileID: 0}
   maxHP: 100
+--- !u!114 &114802347406687922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1708154888742984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dae1bd3945b5fe4d9fc93db8f281e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}
+  text: {fileID: 0}
+  distance: 0
 --- !u!114 &114871134169439076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e5928573d2be5428fbb513cc079f0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shotgun: 1
+  Shotgun: 0
   Bullet: {fileID: 1652612841593870, guid: 3e6c12ae807164448b7e6fae8b499cd5, type: 2}
   Damage: 10
   fireRate: 2
